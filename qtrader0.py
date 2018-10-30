@@ -126,3 +126,9 @@ class QTrader(object):
         plt.annotate("Buy and hold sharp ratio: {} \n QTrader: {}".format(self.sharpe(portfolios.buy_and_hold),\
                                     self.sharpe(portfolios.qtrader)), xy = (0.25,0.95), xycoords="axes fraction")
         plt.show()
+
+
+        if __name__ == '__main__':
+            qt = QTrader()
+            qt.graph_portfolio()
+
